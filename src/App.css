@@ -1,0 +1,57 @@
+.light {
+  --mainColo: #64bcf4;
+  --hoverColor: #5bacdf;
+  --backgroundColor: #f1f8fc;
+  --darkOne: #312f3a;
+  --darkTwo: #45424b;
+  --lightOne: #919191;
+  --lightTwo: #aaa;
+}
+
+a {
+  margin: 20px;
+  display: block;
+  font-size: 1.3rem;
+  color: var(--backgroundcolor);
+}
+a:hover{
+  color:#5bacdf;
+    transform: scale(1.05);
+}
+
+button {
+  margin: 20px;
+}
+
+nav {
+  display: flex;
+  background-color:#64bcf4;
+  color: white;
+  justify-content: flex-end;
+}
+.test-error {
+  display: flex;
+  justify-content: center;
+}
+.test-error input {
+  width: 60%;
+  margin: 20px ;
+  padding: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.counter {
+  margin: 20px 0;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.counter input {
+  padding: 15px;
+  color: #f1f8fc;
+  background-color: var(--mainColo)
+}
+.Error{
+  text-align: center;
+}
