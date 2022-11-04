@@ -7,10 +7,17 @@ import TestError from "./Components/TestError";
 function App() {
   return (
     <main className="App">
-      <nav>
+      
+      <nav className="Nav-items"> 
+         <span className="nav-logo">Meriles</span>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/counter">Counter</NavLink>
         <NavLink to="/testErrorBoundary">Test Error boundary</NavLink>
+        
+        <div className="nav-toggle">
+          <div className="bar"></div>
+        </div>
+        
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
