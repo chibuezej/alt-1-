@@ -4,11 +4,11 @@ export default function TestError() {
   const [errrorText, setErrorText] = useState("");
 
   function handleError(e) {
-    if (e.target.value.toUpperCase() == "BOMB") {
-      setErrorText("BOMB");
+    if (e.target.value.toUpperCase() == "ERROR") {
+      setErrorText("ERROR");
     }
   }
-  if (errrorText == "BOMB") {
+  if (errrorText == "ERROR") {
     throw new Error("Error Boundary. Checked.");
   }
   return (
@@ -16,7 +16,7 @@ export default function TestError() {
       <input
         onChange={handleError}
         type="text"
-        placeholder="Enter bomb to check error boundary"
+        placeholder="Enter error to check error boundary"
       />
     </div>
   );

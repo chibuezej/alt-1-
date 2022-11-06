@@ -61,8 +61,10 @@ nav {
   left:0;
 }
 .test-error {
+  margin: 30px 0;
   display: flex;
   justify-content: center;
+  background-color: #aaa;
 }
 .test-error input {
   width: 60%;
@@ -70,6 +72,7 @@ nav {
   padding: 20px;
   font-size: 1.3rem;
   font-weight: bold;
+  border-radius: 30px;
 }
 .counter {
   margin: 20px 0;
@@ -245,6 +248,12 @@ img{
   height: 17vh;
     align-items: center;
     margin: 10px 25%;
+}
+.test-error{
+  margin: 20px 0;
+}
+.test-error input{
+  font-size: 1rem;
 }
 
 }
