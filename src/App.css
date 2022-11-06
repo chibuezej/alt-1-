@@ -7,7 +7,10 @@
   --lightOne: #919191;
   --lightTwo: #aaa;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
 a {
   margin: 20px;
   display: block;
@@ -18,9 +21,29 @@ a:hover{
   color:#5bacdf;
     transform: scale(1.05);
 }
+.active-btn{
+background-color: #f1f8fc;
+    border-radius: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    height: 236px;
+    font-size: 16px;
+    margin: 4vw 2px;
+    cursor: pointer;
+}
 
 button {
-  margin: 20px;
+  margin: 25px 15px;
+  display: flex;
+    padding: 10px 46px;
+    border-radius: 10px;
+    cursor: pointer;
+  text-align: center;
+}
+button:hover{
+  background-color:#919191;
+  transform: scale(1.05);
 }
 
 nav {
@@ -35,6 +58,7 @@ nav {
   font-size:21px;
   margin:15px;
   color:white;
+  left:0;
 }
 .test-error {
   display: flex;
@@ -55,12 +79,38 @@ nav {
   justify-content: center;
 }
 .counter input {
+  margin: 20px;
   padding: 15px;
   color: #f1f8fc;
   background-color: var(--mainColo)
 }
+.Animation{
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #252839;
+}
+
 .Error{
   text-align: center;
+  position: relative;
+  color: #252839;
+ -webkit-text-stroke: 0.3vw #383d52;
+  text-transform: uppercase;
+}
+Error::before{
+  content: attr;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #64bcf4;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #64bcf4;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+  
 }
 /* .Navbar{
   height:60px;
@@ -109,7 +159,15 @@ nav-toggle{
   bottom: 0;
   top: 0;
   color:  #f1f8fc;
+  b0rder-radius: 50px;
 }
+.nav-logo {
+  font-weight: 700;
+  font-size: 21px;
+  margin: 15px;
+  color: #fff;
+  left: 0;
+} 
 h2{
   text-align: center;
   justify-content: center;
@@ -130,11 +188,13 @@ h2{
   
 
 img{
-  
-  height:30vh;
-  margin: 10px 45%;
+   position: relative;
+  height: 30vh;
+    margin: 43px 42%;
+    align-items: center;
+   
 }
-@media (max-width: 700px){
+@media all and (max-width: 745px){
   nav{
     position: absolute:
   top: 60px:
@@ -163,5 +223,36 @@ img{
     width: 32px:
     height: 2px;
   background: var(--backgroundColor)
+  
+}
+.paragh{
+  font-size: 2vh;
+}
+.action-btn {
+  background-color:#f1f8fc;
+  border-radius: 20px;
+  color: #919191;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  height: 230px;
+  width: 76%;
+  font-size: 16px;
+ margin: 4vw 2px;
+  cursor: pointer;
+} 
+img{
+  height: 17vh;
+    align-items: center;
+    margin: 10px 25%;
+}
+
+}
+@keyframes animate {
+  0%,10%,100%{
+    width:0;
+  }
+  70%,90%{
+    width:100%;
   }
 }
