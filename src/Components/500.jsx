@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 export default function Error(props){
     const cardStyle = {
         "borderRadius" : "10px",

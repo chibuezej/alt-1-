@@ -1,6 +1,6 @@
 .light {
-  --mainColo: #64bcf4;
-  --hoverColor: #5bacdf;
+  --mainColo: ;
+  --hoverColor: #101820FF;
   --backgroundColor: #f1f8fc;
   --darkOne: #312f3a;
   --darkTwo: #45424b;
@@ -18,7 +18,7 @@ a {
   color: var(--backgroundcolor);
 }
 a:hover{
-  color:#5bacdf;
+  color:#919191;
     transform: scale(1.05);
 }
 .active-btn{
@@ -48,7 +48,7 @@ button:hover{
 
 nav {
   display: flex;
-  background-color:#64bcf4;
+  background-color:#101820FF;
   color: white;
   justify-content: flex-end;
 }
@@ -84,7 +84,8 @@ nav {
 .counter input {
   margin: 20px;
   padding: 15px;
-  color: #f1f8fc;
+  color: #aaa;
+  font-size: 20px;
   background-color: var(--mainColo)
 }
 .Animation{
@@ -154,15 +155,15 @@ nav-toggle{
 }
 #home{
   
-  background-color: #aaa;
+ background-color:  #FEE715FF; 
   height:80vh;
   margin: 10px 10px;
   justify-content: center;
   text-align: center;
   bottom: 0;
   top: 0;
-  color:  #f1f8fc;
-  b0rder-radius: 50px;
+  border-radius: 182px;
+  
 }
 .nav-logo {
   font-weight: 700;
@@ -172,20 +173,23 @@ nav-toggle{
   left: 0;
 } 
 h2{
-  text-align: center;
-  justify-content: center;
-  color:  #64bcf4;
-  font-size: 3vh;
+     text-align: center;
+    justify-content: center;
+    color: #101820F;
+    font-size: 30px;
+    margin: 28px 0px 0px 0px;
 }
 .paragh{
   text-align: center;
-  margin: 160px 20%;
-  height: 70%;
-  font-size: 4vh;
+  top:5px;
+  height: 100px;
+  font-size: 5vh;
+    
 }
 .name{
-  font-size: 4vh;
-  color: #312f3a;
+   font-size: 3vh;
+    color: #312f3a;
+    margin: 30px 0;
 }
 
   
@@ -197,13 +201,14 @@ img{
     align-items: center;
    
 }
+
 @media all and (max-width: 745px){
   nav{
-    position: absolute:
-  top: 60px:
+/*     position: absolute:
+  top: 60px: */
   display: flex;
     flex-direction: column;
-    background: #64bcf4;
+    background: #101820F;
     left: 0;
     width:100%;
     height: 100%;
@@ -230,6 +235,7 @@ img{
 }
 .paragh{
   font-size: 2vh;
+  margin: 25px 13px;
 }
 .action-btn {
   background-color:#f1f8fc;
@@ -254,6 +260,11 @@ img{
 }
 .test-error input{
   font-size: 1rem;
+}
+.card{
+  height: 20vh;
+  min-width: 25rem;
+  margin: 5rem 1rem;
 }
 
 }
